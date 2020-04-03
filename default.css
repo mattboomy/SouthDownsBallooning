@@ -1,0 +1,114 @@
+/* CSS Document */
+
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+	background-image: url(home/new-envelope-inflating.jpg);
+}
+
+#centre hr
+{
+	clear: left;
+	border-width: 0px;
+	border-bottom:1px solid #808080;
+	padding: 12px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
+	height:1px;
+}
+
+/* Structure styles */
+
+#centre
+{
+	width: 455px;
+	position: relative;
+	margin: auto;
+	padding: 0px;
+}
+
+#container
+{
+	float: left;
+	padding: 5px 0px 10px 0px;
+	margin: 0px;
+	background: #ffffff;
+	width: 455px;
+}
+
+#content
+{
+	clear: both;
+	float: left;
+	width: 435px;
+	margin: 25px 0px 0px 0px;
+	padding: 137px 5px 0px 15px;
+	background: url(home/hampshire_wide.jpg) no-repeat 0px 33px;
+}
+	.column_50,.column_100
+	{
+		float:left;
+		width:211px;
+		padding:0px 3px 15px 0px;
+		margin:0px;
+	}
+	
+	.column_50 {width:425px;}
+	
+	.column_100 {width:853px;}
+
+	.box
+	{
+		display: block;
+		padding: 10px;
+		margin: 10px;
+		background: #999;
+		border-radius: 6px;
+		-moz-border-radius: 6px; /* firefox ext */
+		-webkit-borderradius: 6px; /* safari & chrome ext */
+	}		
+		.box.morning {background: #ffdd14 url(home/A210Oct21.gif) no-repeat top right;}
+		.box.evening {background: #33cc33 url(home/A210Oct21.gif) no-repeat top right;}
+		.box.weekend {background: #333399 url(home/A210Oct21.gif) no-repeat top right;}
+
+	.no_gutter {padding-right:0px;margin-right:0px;}
+	.no_foot {padding-bottom:0px;margin-bottom:0px;}
+		
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 40px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	bottom: 0;
+	width: 435px;	
+	background: #ffdd14;	
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #33cc3;
+	border-radius: 6px;
+	-moz-border-radius: 6px; /* firefox ext */
+	-webkit-borderradius: 6px; /* safari & chrome ext */
+	margin-top: -40px; /* negative value of footer height */
+	height: 70px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+@media only screen and (min-width: 760px) {
+	#centre {width: 910px; }
+	#container {width: 910px; padding: 10px 0px 20px 0px;}
+	#content {width: 870px; padding: 137px 10px 0px 30px;}
+	#footer {width: 870px;}
+	
+}
