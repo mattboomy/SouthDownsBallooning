@@ -1,0 +1,193 @@
+/* CSS Document */
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+body#tinymce {padding:10px;} 
+
+/* Font styles */
+
+#centre h1,#centre h2,#centre h3,#centre h4,#centre h5,#centre h6
+{
+	margin:0px;
+	padding:5px 20px 5px 0px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #333399;
+}
+
+#centre p
+{
+	margin:0px;
+	padding:0px 20px 1em 0px;
+	font-weight: normal;
+	line-height: 1.4em;
+	color: #3f3f3f;
+}
+
+#centre ul,#centre ol
+{
+	margin:0px;
+	padding:0px 0px 1em 20px;
+	font-weight: normal;
+	line-height: 1.4em;
+	color: #3f3f3f;
+}
+
+h1
+{
+	font-size: 20px;	
+}
+
+h2
+{
+	font-size: 18px;
+}
+
+h3, h1 .subtitle
+{
+	font-size: 16px;
+}
+	
+
+/* Navigation styles */
+
+/* remove all the bullets, borders and padding from the default list styling */
+#centre #navigation ul {padding:0px;margin:0px;list-style-type:none;}
+#centre #navigation ul ul {width:104px;padding:0px;margin:0px;}
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+#centre #navigation li {float:left;width:104px;position:relative;padding:0;margin:0px 0px 0px 2px;}
+/* style the links for the top level */
+#centre #navigation a, #centre #navigation a:visited {display:block;font-size:10px;text-decoration:none; color:#fff; width:88px; height:30px; background:#333399; padding:5px 7px 0px 8px;
+	line-height: 1.2em;
+	text-transform:uppercase;
+	margin: 10px 0px 2px 0px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		-moz-border-radius: 6px 6px 0px 0px;
+		-webkit-border-top-left-radius: 6px;
+		-webkit-border-top-right-radius: 6px;
+		-webkit-border-bottom-right-radius: 0px;
+		-webkit-border-bottom-left-radius: 0px;}
+/* a hack so that IE5.5 faulty box model is corrected */
+* html #centre #navigation a, * html #centre #navigation a:visited {width:104px; w\idth:88px;}
+
+/* style the second level background */
+#centre #navigation ul ul a.drop, #centre #navigation ul ul a.drop:visited {background:#333399;}
+/* style the second level hover */
+#centre #navigation ul ul a.drop:hover{background:#33cc33;}
+#centre #navigation ul ul :hover > a.drop {background:#3f3f3f;}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+#centre #navigation ul ul {visibility:hidden;position:absolute;height:0;top:46px;left:-4px; width:104px; border:2px solid #fff;}
+/* another hack for IE5.5 */
+* html #centre #navigation ul ul {top:45px;t\op:46px;}
+
+/* style the table so that it takes no ppart in the layout - required for IE to work */
+#centre #navigation table {position:absolute; top:0; left:0; border-collapse:collapse;}
+
+/* style the second level links */
+#centre #navigation ul ul a, #centre #navigation ul ul a:visited {background:#333399; color:#fff; height:auto; line-height:1.2em; padding:5px 2px 5px 8px; width:94px; margin:0px;
+		border-radius: 0px;
+		-moz-border-radius: 0px;
+		-webkit-radius: 0px;}
+/* yet another hack for IE5.5 */
+* html #centre #navigation ul ul a, * html #centre #navigation ul ul a:visited {width:189px;w\idth:94px;left: -6px; l/eft:-4px;}
+
+/* style the top level hover */
+#centre #navigation a:hover, #centre #navigation a.nav-selected, #centre #navigation a.nav-section-selected {color:#fff; background:#3f3f3f; height:40px; margin: 0px 0px 2px 0px;}
+#centre #navigation ul ul a:hover, #centre #navigation ul ul a.nav-selected {color:#fff; background:#33cc33; height:auto; margin:0px;}
+#centre #navigation :hover > a {color:#fff; background:#33cc33; height:40px; margin: 0px 0px 2px 0px;}
+#centre #navigation ul ul :hover > a {color:#fff; background:#33cc33; height:auto; margin:0px;}
+
+/* make the second level visible when hover on first level list OR link */
+#centre #navigation ul li:hover ul,
+#centre #navigation ul a:hover ul{visibility:visible; }
+
+#centre #content a
+{
+	text-decoration: none;
+	color: #333399;
+	padding: 0px;
+	margin: 0px;
+}
+
+#centre #content a:hover
+{
+	text-decoration: none;
+	color: #33cc33;
+	padding: 0px;
+	margin: 0px;
+}
+
+#centre #footer ul
+{
+	padding: 7px 0px 0px 0px; 
+	margin: 0px;
+	line-height: normal;
+	border-top:1px solid #333399;
+}
+
+#centre #footer ul li
+{
+	padding: 0px 20px 0px 0px;
+	margin: 0px;
+	list-style-type: none;
+	font-size:9px; 
+	display: inline;
+	line-height: 1.2em;
+	color: #3f3f3f;
+}
+
+#centre #footer ul li a
+{
+	text-decoration: none;
+	color: #3f3f3f;
+	padding: 0px;
+	margin: 0px;
+}
+
+#centre #footer ul li a:hover, #centre #footer ul li a:active
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 0px;
+	margin: 0px;
+}
+
+	#centre #footer h3
+	{
+		font-size:11px;
+		text-decoration:none; 
+		color:#fff; 
+		height:20px; 
+		width:545px; 
+		background:#333399; 
+		padding:5px 7px 0px 8px;
+		line-height: 1.2em;
+		margin: 0px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		
+	}
+	
+	#centre #footer h3 strong
+	{
+		font-size: 12.5px;
+		padding: 0px 1px 0px 2px;
+		color: #ffdd14;
+	}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
